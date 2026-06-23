@@ -1,0 +1,1460 @@
+/* =========================================================
+   MAIN PAGE START
+========================================================= */
+
+/* =========================
+   MAIN PAGE WRAPPER
+========================= */
+
+.main-container {
+  background: #0f1318;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 30px;
+
+  max-width: 1400px;
+  margin: 0 auto;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/main-banner.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  color: #cfcfcf;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* =========================
+   OTT SECTION
+========================= */
+
+.ott-section {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.ott-section h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.ott-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ott-list a {
+  width: 140px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #20252d;
+  border-radius: 12px;
+
+  color: #fff;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.ott-list a:hover {
+  background: #2f80ed;
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* =========================
+   CONTENT SLIDER
+========================= */
+.content-section {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.content-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.content-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.content-slider {
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  padding: 10px 50px;
+
+  scrollbar-width: none;
+}
+
+.content-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================
+   CONTENT CARD 
+========================= */
+
+.content-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content-card {
+  width: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background: #1a1f27;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.content-card img {
+  width: 100%;
+  display: block;
+}
+
+.content-card p {
+  padding: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.content-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================================
+   SLIDER BUTTON
+========================================================= */
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: 0.2s;
+}
+
+.slider-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.slider-btn.left {
+  left: -10px;
+}
+
+.slider-btn.right {
+  right: -10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 400px;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .ott-list a {
+    width: 120px;
+    height: 60px;
+  }
+
+  .content-card {
+    width: 140px;
+  }
+
+  .slider-btn {
+    display: none;
+  }
+}
+
+/* =========================================================
+   MAIN PAGE END
+========================================================= */
+
+/* =========================================================
+   AUTH START
+========================================================= */
+
+/* =========================================================
+   LAYOUT (LOGIN / JOIN COMMON)
+========================================================= */
+
+.login-container,
+.join-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0f1318;
+  padding: 40px 0;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.login-box,
+.join-box {
+  width: 420px;
+
+  padding: 36px;
+
+  background: #1a212b;
+  border-radius: 16px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.login-box h2,
+.join-box h2 {
+  text-align: center;
+
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+
+  margin-bottom: 26px;
+  letter-spacing: -0.3px;
+}
+
+/* =========================================================
+   INPUT GROUP
+========================================================= */
+
+.input-group {
+  margin-bottom: 14px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* INPUT BASE */
+.input-group input {
+  width: 100%;
+  height: 44px;
+
+  padding: 0 12px;
+
+  border-radius: 10px;
+  border: 1px solid #2f3a46;
+
+  background: #111827;
+  color: #ffffff;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+/* focus */
+.input-group input:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.25);
+}
+
+/* file */
+.file-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-box input[type="file"] {
+  display: none;
+}
+
+.file-btn {
+  padding: 10px 12px;
+
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+
+  color: #fff;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.file-btn:hover {
+  background: #30363d;
+}
+
+.file-name {
+  font-size: 12px;
+  color: #8b949e;
+}
+
+/* =========================================================
+   DUP CHECK BOX
+========================================================= */
+
+.dup-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dup-box input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* button */
+.dup-box button {
+  height: 40px;
+  padding: 0 14px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: #4f8cff;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+}
+
+.dup-box button:hover {
+  background: #3b78e7;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.login-btn,
+.join-btn {
+  width: 100%;
+  height: 44px;
+
+  margin-top: 14px;
+
+  background: #4f8cff;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.login-btn:hover,
+.join-btn:hover {
+  background: #3b78e7;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   CTA AREA
+========================================================= */
+
+.join-area,
+.login-area {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.join-area p,
+.login-area p {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.join-area a,
+.login-area a {
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.join-area a:hover,
+.login-area a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   OTT CHIPS
+========================================================= */
+
+.ott-check-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* chip */
+.ott-check-group label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 12px;
+
+  font-size: 12px;
+
+  border-radius: 999px;
+
+  background: #111827;
+  border: 1px solid #2f3a46;
+
+  color: #9ca3af;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+  user-select: none;
+}
+
+/* hover */
+.ott-check-group label:hover {
+  border-color: #4f8cff;
+  color: #fff;
+}
+
+/* checkbox hidden */
+.ott-check-group input {
+  display: none;
+}
+
+/* selected */
+.ott-check-group label:has(input:checked) {
+  background: #4f8cff;
+  border-color: #4f8cff;
+  color: #fff;
+
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(79, 140, 255, 0.25);
+}
+
+/* =========================================================
+   KAKAO BUTTON
+========================================================= */
+
+.kakao-btn {
+  width: 100%;
+  height: 44px;
+
+  margin-top: 14px;
+
+  background: #fee500;
+  color: #111;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.kakao-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.find-area {
+  margin-top: 14px;
+  margin-bottom: 18px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   AUTH END
+========================================================= */
+
+/* =========================================================
+   LIST UI SYSTEM START (CONTENT / SEARCH / FAVORITE BASE)
+========================================================= */
+
+/* =========================
+   LIST HEADER (COMMON)
+========================= */
+
+.list-header {
+  margin-bottom: 30px;
+}
+
+.list-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SEARCH FORM (OPTIONAL MODULE)
+========================= */
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px 14px;
+
+  border-radius: 8px;
+  border: 1px solid #2a323d;
+
+  background: #151b22;
+  color: #fff;
+
+  outline: none;
+}
+
+.search-form button {
+  padding: 10px 16px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: #4f7cff;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+/* =========================
+   LIST WRAPPER
+========================= */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   CATEGORY FILTER (LIST ONLY)
+========================= */
+
+.category-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+
+  border-radius: 20px;
+  border: 1px solid #2a323d;
+
+  background: #151b22;
+  color: #c9d1d9;
+
+  font-size: 13px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-btn:hover {
+  background: #1f2a36;
+}
+
+.category-btn.active {
+  background: #4f7cff;
+  border-color: #4f7cff;
+  color: #fff;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-result {
+  text-align: center;
+
+  padding: 40px;
+
+  color: #9aa4af;
+  font-size: 14px;
+}
+
+/* =========================================================
+   LIST UI SYSTEM END
+========================================================= */
+
+/* =========================================================
+   DETAIL PAGE (ODITJI FINAL STRUCTURE)
+========================================================= */
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.detail-top {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+
+  background: #161b22;
+  border: 1px solid #242c37;
+  border-radius: 16px;
+
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   POSTER
+========================= */
+
+.detail-poster img {
+  width: 320px;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   INFO AREA
+========================= */
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+.detail-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* META */
+.content-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #b8c0cc;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* OVERVIEW */
+.content-overview {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d4d8de;
+  margin-bottom: 35px;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.watch-btn,
+.review-btn,
+.wish-btn-detail {
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* WATCH */
+.watch-btn {
+  background: #e50914;
+  color: #fff;
+}
+
+.watch-btn:hover {
+  transform: translateY(-2px);
+  background: #ff1f2b;
+}
+
+/* REVIEW */
+.review-btn {
+  background: #2b3440;
+  color: #fff;
+}
+
+.review-btn:hover {
+  background: #394554;
+}
+
+/* WISH DETAIL */
+.wish-btn-detail {
+  background: transparent;
+  color: #ff4d67;
+  border: 1px solid #ff4d67;
+}
+
+.wish-btn-detail:hover {
+  background: #ff4d67;
+  color: #fff;
+}
+
+/* =========================
+   OTT SECTION
+========================= */
+
+.ott-box {
+  padding-top: 20px;
+  border-top: 1px solid #242c37;
+}
+
+.ott-label {
+  font-size: 14px;
+  color: #9ca7b5;
+  margin-bottom: 12px;
+}
+
+.ott-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   DETAIL SECTIONS
+========================= */
+
+.detail-section {
+  background: #161b22;
+  border: 1px solid #242c37;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.detail-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #242c37;
+  padding-bottom: 10px;
+}
+
+.detail-section p {
+  line-height: 1.9;
+  color: #d4d8de;
+}
+
+/* =========================
+   INFO TABLE
+========================= */
+
+.detail-table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.detail-table div {
+  background: #0f1318;
+  border: 1px solid #242c37;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.detail-table strong {
+  display: block;
+  color: #8f9bab;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.detail-table span {
+  color: #fff;
+  font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .detail-top {
+    flex-direction: column;
+  }
+
+  .detail-poster img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .detail-table {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-top {
+    padding: 25px;
+  }
+
+  .detail-title {
+    font-size: 32px;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+
+  .watch-btn,
+  .review-btn,
+  .wish-btn-detail {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   MYPAGE PAGE START
+========================================================= */
+
+/* =========================
+   SECTION CARD
+========================= */
+
+.mypage-section {
+  background: #161b22;
+  border: 1px solid #242c37;
+  border-radius: 12px;
+
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   MEMBER INFO
+========================= */
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 12px;
+  border-bottom: 1px solid #242c37;
+}
+
+.label {
+  width: 100px;
+  color: #9aa4af;
+  font-weight: 600;
+}
+
+.value {
+  flex: 1;
+  color: #fff;
+}
+
+/* =========================
+   BUTTON AREA
+========================= */
+
+.mypage-btn-area {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 15px;
+}
+
+.mypage-btn-area button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  background: #00c896;
+  color: #fff;
+
+  transition: 0.2s ease;
+}
+
+.mypage-btn-area button:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   OTT TAGS (MYPAGE CONTEXT)
+========================= */
+
+.mypage-section .ott-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mypage-section .ott-item {
+  padding: 10px 18px;
+
+  background: #0f1318;
+  border: 1px solid #242c37;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================
+   FAVORITE GRID
+========================= */
+
+.favorite-content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* 카드 (mypage 전용 scope 유지) */
+.favorite-content-grid .content-card {
+  cursor: pointer;
+}
+
+.favorite-content-grid .content-card img {
+  width: 100%;
+  height: 330px;
+
+  object-fit: cover;
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+.favorite-content-grid .content-card:hover img {
+  transform: scale(1.03);
+}
+
+.favorite-content-grid .content-card h3 {
+  margin-top: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* =========================================================
+   MODAL SYSTEM (GLOBAL COMPONENT)
+========================================================= */
+
+/* OVERLAY */
+.modal {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+/* MODAL BOX */
+.modal-content {
+  width: 500px;
+
+  background: #161b22;
+  border: 1px solid #242c37;
+  border-radius: 12px;
+
+  padding: 30px;
+}
+
+/* TITLE */
+.modal-content h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* FORM */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"] {
+  width: 100%;
+  padding: 12px;
+
+  background: #0f1318;
+  border: 1px solid #242c37;
+  border-radius: 8px;
+
+  color: #fff;
+}
+
+.modal-content label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BUTTON AREA */
+.modal-btn-area {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+.modal-btn-area button {
+  flex: 1;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.modal-btn-area button:first-child {
+  background: #00c896;
+  color: #fff;
+}
+
+.modal-btn-area button:last-child {
+  background: #2d3742;
+  color: #fff;
+}
+
+/* =========================================================
+   MYPAGE PAGE END
+========================================================= */
+
+/* =========================================================
+   FAVORITE LIST
+========================================================= */
+
+.favorite-container {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.favorite-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.favorite-header h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.favorite-header p {
+  color: #9aa4af;
+  font-size: 14px;
+}
+
+.favorite-tab {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #161b22;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #00c896;
+  font-weight: 600;
+}
+
+.edit-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #374151;
+  color: #fff;
+  cursor: pointer;
+}
+
+.favorite-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.favorite-card {
+  background: #161b22;
+  border: 1px solid #242c37;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.favorite-card:hover {
+  transform: translateY(-5px);
+  border-color: #00c896;
+}
+
+.favorite-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.favorite-info {
+  padding: 15px;
+}
+
+.favorite-info h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.ott-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e50914;
+  color: #fff;
+}
+
+.ott-badge.disney {
+  background: #0063e5;
+}
+
+/* =========================================================
+   REVIEW SYSTEM START (LIST + FORM)
+========================================================= */
+
+/* =========================
+   REVIEW LIST PAGE
+========================= */
+
+.review-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  color: #fff;
+}
+
+/* =========================
+   REVIEW HEADER
+========================= */
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.review-header h2 {
+  font-size: 30px;
+}
+
+/* =========================
+   SORT OPTION
+========================= */
+
+.review-sort {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 20px;
+}
+
+.review-sort select {
+  padding: 10px 15px;
+
+  border-radius: 8px;
+  border: 1px solid #2d3748;
+
+  background: #161b22;
+  color: #fff;
+}
+
+/* =========================
+   REVIEW LIST WRAPPER
+========================= */
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =========================
+   REVIEW CARD
+========================= */
+
+.review-card {
+  background: #161b22;
+  border: 1px solid #2d3748;
+  border-radius: 14px;
+
+  padding: 20px;
+}
+
+/* TOP AREA */
+.review-top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+/* STAR */
+.review-star {
+  color: #ffd700;
+  font-size: 18px;
+}
+
+/* USER */
+.review-user {
+  color: #9aa4af;
+}
+
+/* CONTENT */
+.review-content {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* BOTTOM META */
+.review-bottom {
+  display: flex;
+  gap: 20px;
+
+  color: #9aa4af;
+}
+
+/* =========================================================
+   REVIEW FORM PAGE
+========================================================= */
+
+.review-form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* FORM BOX */
+.review-form-box {
+  background: #161b22;
+  border: 1px solid #2d3748;
+  border-radius: 14px;
+
+  padding: 30px;
+  color: #fff;
+}
+
+/* TITLE */
+.review-form-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* RATING */
+.rating-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+.rating-group label {
+  cursor: pointer;
+  color: #ffd700;
+  font-size: 18px;
+}
+
+/* TEXTAREA */
+.review-form-box textarea {
+  width: 100%;
+  padding: 15px;
+
+  border-radius: 10px;
+  border: 1px solid #2d3748;
+
+  background: #0f1318;
+  color: #fff;
+
+  resize: none;
+}
+
+/* ACTION AREA */
+.review-btn-area {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+/* =========================================================
+   REVIEW SYSTEM END
+========================================================= */
